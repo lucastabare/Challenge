@@ -34,7 +34,6 @@ const mockData = [
         tipo: 'SUV',
         precio: '$50,000',
     },
-    // Agrega más vehículos según sea necesario...
     {
         id: 6,
         marca: 'Mercedes',

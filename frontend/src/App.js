@@ -1,7 +1,7 @@
 import './App.css';
-import { Breadcrumb, Layout, Menu } from 'antd';
+import { Layout, Menu } from 'antd';
 import items from './menu/menuHeader';
-import SearchResult from './views/SearchResult';
+import AppRouter from './Router';
 
 const { Header, Content, Footer } = Layout;
 
@@ -36,11 +36,11 @@ function App() {
             borderRadius: "8px",
           }}
         >
-          <SearchResult />
+          <AppRouter />
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+        ©{new Date().getFullYear()} Created by Lucas Tabare
       </Footer>
     </Layout>
   );
