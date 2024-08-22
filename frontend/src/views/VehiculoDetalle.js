@@ -24,13 +24,22 @@ function VehiculoDetalle() {
             {vehicle && (
                 <Card
                     title={`${vehicle.marca} ${vehicle.modelo}`}
-                    cover={vehicle.imageUrl && <img alt={`${vehicle.marca} ${vehicle.modelo}`} src={vehicle.imageUrl} />}
+                    cover={vehicle.imageUrl && (
+                        <img
+                            alt={`${vehicle.marca} ${vehicle.modelo}`}
+                            src={vehicle.imageUrl}
+                            style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }}
+                        />
+                    )}
                 >
-                    <p>Tipo: {vehicle.tipo}</p>
-                    <p>Precio: {vehicle.precio}</p>
-                    <p>Kilómetros: {vehicle.kilometros}</p>
-                    <p>Color: {vehicle.color}</p>
-                    <p>Motor: {vehicle.cc_motor} cc</p>
+                    <p>
+                        {vehicle?.descripcion}
+                    </p>
+                    <p>Tipo: {vehicle?.tipo}</p>
+                    <p>Precio: {vehicle?.precio}</p>
+                    <p>Kilómetros: {vehicle?.kilometros}</p>
+                    <p>Color: {vehicle?.color}</p>
+                    <p>Motor: {vehicle?.motor} cc</p>
                     <Button type="primary" onClick={() => window.history.back()}>Volver</Button>
                 </Card>
             )}

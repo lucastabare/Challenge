@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "challege-auta",
-    "public": "build", 
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,6 +12,10 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "local": {
+      "host": "localhost",
+      "port": 3001
+    }
   }
 }
